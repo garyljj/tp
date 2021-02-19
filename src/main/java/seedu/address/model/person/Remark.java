@@ -12,10 +12,12 @@ public class Remark {
     public static final String MESSAGE_CONSTRAINTS = "Remarks can take any values, and it should not be blank";
 
     /*
+     * For now, allows any input.
+     * To be added:
      * The first character of the remark must not be a whitespace,
      * otherwise " " (a blank string) becomes a valid input.
      */
-    public static final String VALIDATION_REGEX = "[^\\s].*";
+    public static final String VALIDATION_REGEX = ".*"; // TODO : change to valid validation regex ( [^\\s].* )
 
     public final String value;
 
